@@ -3,8 +3,8 @@ function s_porc(a, b) {
 }
 
 function ruler(pcompra, pvenda, nitem){
-    //var pcompra = s_porc(pcompra, 1.5)
-    let paid_value = nitem * pcompra
+    var pcompra1 = s_porc(pcompra, 1.5)
+    let paid_value = nitem * pcompra1
     var pvenda = s_porc(pvenda, 4.5)
     let gross_profit = nitem * pvenda
     let net_profit = gross_profit - paid_value
