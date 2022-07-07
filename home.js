@@ -22,5 +22,4 @@ function calcule(){
     document.getElementById("gross_profit").value = ls_results[1];
     document.getElementById("net_profit").value = ls_results[2];
     document.getElementById("imposto").value = ls_results[3];
-    console.log("chegou")
 }
