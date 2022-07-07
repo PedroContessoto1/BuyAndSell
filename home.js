@@ -3,12 +3,12 @@ function s_porc(a, b) {
 }
 
 function ruler(pcompra, pvenda, nitem){
-    var pcompra1 = s_porc(pcompra, 98.5)
-    let paid_value = nitem * (pcompra + pcompra1)
+    var txcompra = s_porc(pcompra, 1.5)
+    let paid_value = nitem * (pcompra + txcompra)
     var pvenda = s_porc(pvenda, 4.5)
     let gross_profit = nitem * pvenda
     let net_profit = gross_profit - paid_value
-    let imposto = paid_value * 0.015
+    let imposto = ((nitem * pcompra) * 0.015) + ((nitem * pvenda) * 0.045)
     return [paid_value.toFixed(2), gross_profit.toFixed(2), net_profit.toFixed(2), imposto.toFixed(2)]
 }
 
