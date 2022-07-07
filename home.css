@@ -1,0 +1,57 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+body{   
+    background-image: url(image.jpeg);
+    background-size: 1600px;
+}
+
+#area
+{
+  background-color: #000000;
+  position: absolute;
+  left:40%;
+  text-align: center;
+
+}
+
+button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+
+label {
+    color: #00fff7;
+    font-weight: bold;
+    width: 130px;
+    float: left;
+  
+  }
+
+fieldset[id="1f"]
+{
+  width:300px;
+  height:360px;
+}
+
+fieldset[id="2f"]
+{
+  width:300px;
+  height:360px;
+}
