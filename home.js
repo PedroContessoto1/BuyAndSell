@@ -3,7 +3,7 @@ function s_porc(a, b) {
 }
 
 function ruler(pcompra, pvenda, nitem){
-    var txcompra = s_porc(pcompra, 98.5)
+    var txcompra = pcompra * 0.015
     let paid_value = nitem * (pcompra + txcompra)
     var pvenda = s_porc(pvenda, 4.5)
     let gross_profit = nitem * pvenda
@@ -13,9 +13,9 @@ function ruler(pcompra, pvenda, nitem){
 }
 
 function calcule(){
-    var pcompra = document.getElementById("pcompra").value;
-    var pvenda = document.getElementById("pvenda").value;
-    var nitem = document.getElementById("nitem").value;
+    var pcompra = parseFloat(document.getElementById("pcompra").value);
+    var pvenda = parseFloat(document.getElementById("pvenda").value);
+    var nitem = parseFloat(document.getElementById("nitem").value);
     var ls_results = ruler(pcompra, pvenda, nitem)
     document.getElementById("paid_value").value = ls_results[0];
     document.getElementById("gross_profit").value = ls_results[1];
