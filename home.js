@@ -4,6 +4,7 @@ function s_porc(a, b) {
 
 function ruler(pcompra, pvenda, nitem){
     var txcompra = s_porc(pcompra, 1.5)
+    console.log(txcompra)
     let paid_value = nitem * (pcompra + txcompra)
     var pvenda = s_porc(pvenda, 4.5)
     let gross_profit = nitem * pvenda
